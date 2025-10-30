@@ -1,0 +1,19 @@
+- type: gameMap
+  id: DampArena
+  mapName: 'Damp Arena'
+  mapPath: /Maps/_FungalWood/DampArena.yml
+  minPlayers: 0
+  maxRandomOffset: 0
+  randomRotation: false
+  stations:
+    DampArena:
+      stationProto: PlanetMap
+      components:
+      - type: StationBiome
+        biome: Grasslands
+        mapLightColor: '#D8B059FF'
+      - type: StationJobs
+        availableJobs:
+          FWPeasant: [ -1, -1 ]
+          Chef: [ 1, 1 ]
+          Bartender: [ 1, 1 ]

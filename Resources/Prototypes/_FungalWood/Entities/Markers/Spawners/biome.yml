@@ -1,0 +1,34 @@
+- type: entity
+  id: FWBiomeSpawnerBase
+  abstract: true
+  components:
+  - type: CP14BiomeSpawner
+  - type: PlacementReplacement
+    key: CP14BiomeSpawner
+  - type: Sprite
+    sprite: _FungalWood/Markers/biomes.rsi
+    state: base
+
+- type: entity
+  id: FWBiomeSpawnerGrasslands
+  parent: FWBiomeSpawnerBase
+  name: biome spawner
+  suffix: Grasslands
+  components:
+  - type: CP14BiomeSpawner
+    biome: FWGrasslands
+  - type: Sprite
+    sprite: _FungalWood/Markers/biomes.rsi
+    state: grasslands
+
+- type: entity
+  id: FWBiomeSpawnerCaves
+  parent: FWBiomeSpawnerBase
+  name: biome spawner
+  suffix: Caves
+  components:
+  - type: CP14BiomeSpawner
+    biome: FWCaves
+  - type: Sprite
+    sprite: _FungalWood/Markers/biomes.rsi
+    state: cave
